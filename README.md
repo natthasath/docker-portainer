@@ -8,7 +8,7 @@ Portainer Community Edition is a lightweight service delivery platform for conta
 
 ### 🥈 Run
 
-- [http://localhost:9000/](http://localhost:9000/) username : `admin` password : `password`
+- [http://localhost:9000/](http://localhost:9000/) username : `admin` password : `admin`
 
 ```shell
 docker-compose up -d

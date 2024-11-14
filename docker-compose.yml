@@ -16,8 +16,10 @@ services:
 
 networks:
   default:
+    name: docker_portainer_network
     driver: bridge
 
 volumes:
   data:
+    name: docker_portainer_data
     driver: local

@@ -1,3 +1,4 @@
+name: ${GLOBAL_NAME}
 services:
   portainer:
     container_name: ${PORTAINER_CONTAINER_NAME}
@@ -10,7 +11,7 @@ services:
       - ${PORTAINER_HTTPS_PORT}:9443
       - ${PORTAINER_AGENT_PORT}:8000
     volumes:
-      - portainer_data:/data
+      - default:/data
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - default
@@ -21,6 +22,6 @@ networks:
     driver: bridge
 
 volumes:
-  portainer_data:
+  default:
     name: ${PORTAINER_CONTAINER_NAME}_data
     driver: local
